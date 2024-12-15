@@ -66,12 +66,12 @@
 #define HAVE_MALLOC_H 1
 #define HAVE_MATH_H 1
 /* #undef HAVE_MEMORY_H */
-#define HAVE_SIGNAL_H 1
+/* #undef HAVE_SIGNAL_H */
 #define HAVE_STDARG_H 1
 #define HAVE_STDINT_H 1
 #define HAVE_STDIO_H 1
 #define HAVE_STDLIB_H 1
-#define HAVE_STRINGS_H 1
+/* #undef HAVE_STRINGS_H */
 #define HAVE_STRING_H 1
 #define HAVE_SYS_TYPES_H 1
 #define HAVE_WCHAR_H 1
@@ -85,10 +85,10 @@
 #define HAVE_FREE 1
 #define HAVE_ALLOCA 1
 #ifndef __WIN32__ /* Don't use C runtime versions of these on Windows */
-#define HAVE_GETENV 1
-#define HAVE_SETENV 1
-#define HAVE_PUTENV 1
-#define HAVE_UNSETENV 1
+// #define HAVE_GETENV 1
+// #define HAVE_SETENV 1
+// #define HAVE_PUTENV 1
+// #define HAVE_UNSETENV 1
 #endif
 #define HAVE_QSORT 1
 #define HAVE_ABS 1
@@ -98,15 +98,16 @@
 #define HAVE_MEMMOVE 1
 /* #undef HAVE_MEMCMP */
 #define HAVE_WCSLEN 1
-#define HAVE_WCSLCPY 1
-#define HAVE_WCSLCAT 1
+/* #undef HAVE_WCSLCPY */
+/* #undef HAVE_WCSLCAT */
 #define HAVE_WCSDUP 1
 #define HAVE_WCSSTR 1
 #define HAVE_WCSCMP 1
 #define HAVE_WCSNCMP 1
 #define HAVE_STRLEN 1
-#define HAVE_STRLCPY 1
-#define HAVE_STRLCAT 1
+// #define HAVE_STRLCPY 1
+// #define HAVE_STRLCAT 1
+#define HAVE_STRDUP 1
 /* #undef HAVE__STRREV */
 /* #undef HAVE__STRUPR */
 /* #undef HAVE__STRLWR */
@@ -178,15 +179,13 @@
 #define HAVE_TAN 1
 #define HAVE_TANF 1
 /* #undef HAVE_FOPEN64 */
-#define HAVE_FSEEKO 1
+/* #undef HAVE_FSEEKO */
 /* #undef HAVE_FSEEKO64 */
 /* #undef HAVE_SIGACTION */
 /* #undef HAVE_SA_SIGACTION */
 #define HAVE_SETJMP 1
 /* #undef HAVE_NANOSLEEP */
-#ifndef __PSL1GHT__ // Yeah PSL1GHT hasn't sysconf
 /* #undef HAVE_SYSCONF */
-#endif
 /* #undef HAVE_SYSCTLBYNAME */
 /* #undef HAVE_CLOCK_GETTIME */
 /* #undef HAVE_GETPAGESIZE */
@@ -270,7 +269,7 @@
 /* #undef SDL_AUDIO_DRIVER_PAUDIO */
 /* #undef SDL_AUDIO_DRIVER_PULSEAUDIO */
 /* #undef SDL_AUDIO_DRIVER_PULSEAUDIO_DYNAMIC */
-#define SDL_AUDIO_DRIVER_PSL1GHT 1
+#define SDL_AUDIO_DRIVER_PS3 1
 /* #undef SDL_AUDIO_DRIVER_QSA */
 /* #undef SDL_AUDIO_DRIVER_SNDIO */
 /* #undef SDL_AUDIO_DRIVER_SNDIO_DYNAMIC */
@@ -296,7 +295,7 @@
 /* #undef SDL_JOYSTICK_RAWINPUT */
 /* #undef SDL_JOYSTICK_EMSCRIPTEN */
 #define SDL_JOYSTICK_VIRTUAL 1
-#define SDL_JOYSTICK_PSL1GHT 1
+#define SDL_JOYSTICK_PS3 1
 #define SDL_HAPTIC_DUMMY 1
 /* #undef SDL_HAPTIC_ANDROID */
 /* #undef SDL_HAPTIC_LINUX */
@@ -315,7 +314,7 @@
 /* #undef SDL_LOADSO_WINDOWS */
 
 /* Enable various threading systems */
-#define SDL_THREAD_PSL1GHT 1
+#define SDL_THREAD_PS3 1
 /* #undef SDL_THREAD_PTHREAD */
 /* #undef SDL_THREAD_PTHREAD_RECURSIVE_MUTEX */
 /* #undef SDL_THREAD_PTHREAD_RECURSIVE_MUTEX_NP */
@@ -324,7 +323,7 @@
 /* Enable various timer systems */
 /* #undef SDL_TIMER_HAIKU */
 /* #undef SDL_TIMER_DUMMY */
-#define SDL_TIMER_PSL1GHT 1
+#define SDL_TIMER_PS3 1
 /* #undef SDL_TIMER_UNIX */
 /* #undef SDL_TIMER_WINDOWS */
 
@@ -341,7 +340,7 @@
 /* #undef SDL_VIDEO_DRIVER_WAYLAND_DYNAMIC_EGL */
 /* #undef SDL_VIDEO_DRIVER_WAYLAND_DYNAMIC_CURSOR */
 /* #undef SDL_VIDEO_DRIVER_WAYLAND_DYNAMIC_XKBCOMMON */
-#define SDL_VIDEO_DRIVER_PSL1GHT 1
+#define SDL_VIDEO_DRIVER_PS3 1
 /* #undef SDL_VIDEO_DRIVER_X11 */
 /* #undef SDL_VIDEO_DRIVER_RPI */
 /* #undef SDL_VIDEO_DRIVER_KMSDRM */
@@ -381,7 +380,7 @@
 /* #undef SDL_VIDEO_RENDER_OGL_ES2 */
 /* #undef SDL_VIDEO_RENDER_DIRECTFB */
 /* #undef SDL_VIDEO_RENDER_METAL */
-#define SDL_VIDEO_RENDER_PSL1GHT 1
+#define SDL_VIDEO_RENDER_PS3 1
 
 /* Enable OpenGL support */
 /* #undef SDL_VIDEO_OPENGL */
@@ -422,7 +421,7 @@
 
 /* Enable assembly routines */
 #define SDL_ASSEMBLY_ROUTINES 1
-#define SDL_ALTIVEC_BLITTERS 1
+/* #undef SDL_ALTIVEC_BLITTERS */
 /* #undef SDL_ARM_SIMD_BLITTERS */
 /* #undef SDL_ARM_NEON_BLITTERS */
 
@@ -437,5 +436,10 @@
 
 /* Enable dynamic libsamplerate support */
 /* #undef SDL_LIBSAMPLERATE_DYNAMIC */
+
+#define u32 uint32_t
+#define u64 uint64_t
+#define s32 int32_t
+#define s64 int64_t
 
 #endif /* SDL_config_h_ */

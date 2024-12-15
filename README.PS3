@@ -1,0 +1,15 @@
+SDL2_PS3
+-----------
+
+Based on SDL2_PSL1GHT by sergiou87, https://github.com/sergiou87/SDL2_PSL1GHT
+Itself based on SDL_PSL1GHT by zeldin, https://github.com/zeldin/SDL_PSL1GHT
+Ported to the official Cell SDK by Twilight because there doesn't seem to
+be a proper debugger for PSL1GHT.
+
+
+Build instructions:
+
+- Install Microsoft Visual Studio 2010 (Only VS2010 is supported).
+- Install SCE Cell SDK. Be sure to install the VS2010 plugin.
+- Open PS3/SDL.sln
+- Build and enjoy

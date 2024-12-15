@@ -115,8 +115,8 @@ static VideoBootStrap *bootstrap[] = {
 #if SDL_VIDEO_DRIVER_DUMMY
     &DUMMY_bootstrap,
 #endif
-#if SDL_VIDEO_DRIVER_PSL1GHT
-    &PSL1GHT_bootstrap,
+#if SDL_VIDEO_DRIVER_PS3
+    &PS3_bootstrap,
 #endif
     NULL
 };

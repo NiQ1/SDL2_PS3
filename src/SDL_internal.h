@@ -45,6 +45,8 @@
 #include "dynapi/SDL_dynapi_overrides.h"
 /* force DECLSPEC and SDLCALL off...it's all internal symbols now.
    These will have actual #defines during SDL_dynapi.c only */
+#undef DECLSPEC
+#undef SDLCALL
 #define DECLSPEC
 #define SDLCALL
 #endif

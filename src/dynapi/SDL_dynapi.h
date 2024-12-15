@@ -53,7 +53,7 @@
 #define SDL_DYNAMIC_API 0
 #elif defined(__PSP__) && __PSP__
 #define SDL_DYNAMIC_API 0
-#elif defined(__PSL1GHT__) && __PSL1GHT__
+#elif defined(__PS3__)
 #define SDL_DYNAMIC_API 0
 #elif defined(__riscos__) && __riscos__ /* probably not useful on RISC OS, since dlopen() can't be used when using static linking. */
 #define SDL_DYNAMIC_API 0

@@ -510,6 +510,8 @@ SDL_GetPlatform()
     return "iOS";
 #elif __PSP__
     return "PlayStation Portable";
+#elif __PS3__
+	return "PlayStation 3";
 #else
     return "Unknown (see SDL_platform.h)";
 #endif

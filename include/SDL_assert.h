@@ -58,6 +58,21 @@ assert can have unique static variables associated with it.
 #elif defined(HAVE_SIGNAL_H) && !defined(__WATCOMC__)
     #include <signal.h>
     #define SDL_TriggerBreakpoint() raise(SIGTRAP)
+#elif defined __PS3__
+	#ifdef _DEBUG
+	#define CELL_ASSERT_A1 __FILE__ ": Assertion Error"
+	#define CELL_ASSERT_A2 __func__
+	#else
+	#define CELL_ASSERT_A1 "Assertion Error"
+	#define CELL_ASSERT_A2 ""
+	#endif
+	#ifdef __CELL_ASSERT__
+	void _SCE_Assert(const char *, const char *);
+	#define SDL_TriggerBreakpoint() _SCE_Assert(CELL_ASSERT_A1, CELL_ASSERT_A2)
+	#else
+	void _Assert(const char *, const char *);
+	#define SDL_TriggerBreakpoint() _Assert(CELL_ASSERT_A1, CELL_ASSERT_A2)
+	#endif
 #else
     /* How do we trigger breakpoints on this platform? */
     #define SDL_TriggerBreakpoint()

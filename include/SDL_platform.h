@@ -175,9 +175,9 @@
 #define __SDL_NOGETPROCADDR__
 #endif
 
-#if defined(__PSL1GHT__)
-#undef __PSL1GHT__
-#define __PSL1GHT__  1
+#if defined(__PS3__)
+#undef __PS3__
+#define __PS3__  1
 #endif
 
 

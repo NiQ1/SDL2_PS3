@@ -110,8 +110,8 @@ static const AudioBootStrap *const bootstrap[] = {
 #if SDL_AUDIO_DRIVER_DUMMY
     &DUMMYAUDIO_bootstrap,
 #endif
-#if SDL_AUDIO_DRIVER_PSL1GHT
-    &PSL1GHTAUDIO_bootstrap,
+#if SDL_AUDIO_DRIVER_PS3
+    &PS3AUDIO_bootstrap,
 #endif
     NULL
 };
