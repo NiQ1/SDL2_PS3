@@ -173,9 +173,6 @@
     <ClCompile Include="..\..\src\audio\SDL_mixer.c">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\audio\psl1ght\SDL_psl1ghtaudio.c">
-      <Filter>Source Files\audio</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\cpuinfo\SDL_cpuinfo.c">
       <Filter>Source Files\cpuinfo</Filter>
     </ClCompile>
@@ -212,9 +209,6 @@
     <ClCompile Include="..\..\src\joystick\SDL_joystick.c">
       <Filter>Source Files\joystick</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\joystick\psl1ght\SDL_sysjoystick.c">
-      <Filter>Source Files\joystick</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\power\SDL_power.c">
       <Filter>Source Files\power</Filter>
     </ClCompile>
@@ -222,9 +216,6 @@
       <Filter>Source Files\render</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\render\SDL_yuv_sw.c">
-      <Filter>Source Files\render</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\psl1ght\SDL_PSL1GHTrender.c">
       <Filter>Source Files\render</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\stdlib\SDL_getenv.c">
@@ -245,22 +236,10 @@
     <ClCompile Include="..\..\src\stdlib\SDL_string.c">
       <Filter>Source Files\stdlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\thread\psl1ght\SDL_syssem.c">
-      <Filter>Source Files\thread</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\thread\psl1ght\SDL_systhread.c">
-      <Filter>Source Files\thread</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\thread\SDL_thread.c">
       <Filter>Source Files\thread</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\thread\psl1ght\sigsetops.c">
-      <Filter>Source Files\thread</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\timer\SDL_timer.c">
-      <Filter>Source Files\timer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\timer\psl1ght\SDL_systimer.c">
       <Filter>Source Files\timer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\video\SDL_blit.c">
@@ -317,24 +296,6 @@
     <ClCompile Include="..\..\src\video\SDL_video.c">
       <Filter>Source Files\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\video\psl1ght\SDL_PSL1GHT_mm.c">
-      <Filter>Source Files\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\video\psl1ght\SDL_PSL1GHTevents.c">
-      <Filter>Source Files\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\video\psl1ght\SDL_PSL1GHTkeyboard.c">
-      <Filter>Source Files\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\video\psl1ght\SDL_PSL1GHTmodes.c">
-      <Filter>Source Files\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\video\psl1ght\SDL_PSL1GHTmouse.c">
-      <Filter>Source Files\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\video\psl1ght\SDL_PSL1GHTvideo.c">
-      <Filter>Source Files\video</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\dynapi\SDL_dynapi.c">
       <Filter>Source Files\dynapi</Filter>
     </ClCompile>
@@ -386,11 +347,50 @@
     <ClCompile Include="..\..\src\SDL_dataqueue.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\locale\psl1ght\SDL_syslocale.c">
-      <Filter>Source Files\locale</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\locale\SDL_locale.c">
       <Filter>Source Files\locale</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread\ps3\sigsetops.c">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread\ps3\SDL_syssem.c">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread\ps3\SDL_systhread.c">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\timer\ps3\SDL_systimer.c">
+      <Filter>Source Files\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\locale\ps3\SDL_syslocale.c">
+      <Filter>Source Files\locale</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3_mm.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\joystick\ps3\SDL_sysjoystick.c">
+      <Filter>Source Files\joystick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3video.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\ps3\SDL_PS3render.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3mouse.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3modes.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3keyboard.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3events.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\ps3\SDL_ps3audio.c">
+      <Filter>Source Files\audio</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -404,9 +404,6 @@
       <Filter>Header Files\audio</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\audio\SDL_wave.h">
-      <Filter>Header Files\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\audio\psl1ght\SDL_psl1ghtaudio.h">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\dynapi\SDL_dynapi.h">
@@ -493,9 +490,6 @@
     <ClInclude Include="..\..\src\joystick\usb_ids.h">
       <Filter>Header Files\joystick</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\joystick\psl1ght\SDL_PSL1GHT_PadData.h">
-      <Filter>Header Files\joystick</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\libm\math_libm.h">
       <Filter>Header Files\libm</Filter>
     </ClInclude>
@@ -530,9 +524,6 @@
       <Filter>Header Files\thread</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\thread\SDL_thread_c.h">
-      <Filter>Header Files\thread</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\thread\psl1ght\SDL_systhread_c.h">
       <Filter>Header Files\thread</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\timer\SDL_timer_c.h">
@@ -572,24 +563,6 @@
       <Filter>Header Files\video</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\video\SDL_yuv_c.h">
-      <Filter>Header Files\video</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\video\psl1ght\SDL_PSL1GHT_mm.h">
-      <Filter>Header Files\video</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\video\psl1ght\SDL_PSL1GHTevents_c.h">
-      <Filter>Header Files\video</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\video\psl1ght\SDL_PSL1GHTkeyboard_c.h">
-      <Filter>Header Files\video</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\video\psl1ght\SDL_PSL1GHTmodes_c.h">
-      <Filter>Header Files\video</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\video\psl1ght\SDL_PSL1GHTmouse_c.h">
-      <Filter>Header Files\video</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\video\psl1ght\SDL_PSL1GHTvideo.h">
       <Filter>Header Files\video</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\SDL_assert_c.h">
@@ -764,6 +737,33 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\SDL_vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\ps3\SDL_ps3audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\joystick\ps3\SDL_PS3_PadData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\thread\ps3\SDL_systhread_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3events_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3keyboard_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3modes_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3mouse_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3_mm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

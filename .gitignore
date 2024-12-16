@@ -113,6 +113,36 @@ PS3/*.sdf
 PS3/*.suo
 PS3/*.opensdf
 PS3/SDL/*.vcxproj.user
+external/flac-1.4.3/PS3/PS3_Debug/
+external/flac-1.4.3/PS3/PS3_Release/
+external/jpeg-9f/PS3/PS3_Debug/
+external/jpeg-9f/PS3/PS3_Release/
+external/libmodplug-0.8.9.0/PS3/PS3_Debug/
+external/libmodplug-0.8.9.0/PS3/PS3_Release/
+external/libogg-1.3.5/PS3/PS3_Debug/
+external/libogg-1.3.5/PS3/PS3_Release/
+external/libpng-1.6.44/projects/ps3/PS3_Debug/
+external/libpng-1.6.44/projects/ps3/PS3_Release/
+external/libvorbis-1.3.7/PS3/PS3_Debug/
+external/libvorbis-1.3.7/PS3/PS3_Release/
+external/mpg123-1.32.10/PS3/PS3_Debug/
+external/mpg123-1.32.10/PS3/PS3_Release/
+external/opus-1.5.2/PS3/PS3_Debug/
+external/opus-1.5.2/PS3/PS3_Release/
+external/opusfile-0.12/PS3/PS3_Debug/
+external/opusfile-0.12/PS3/PS3_Release/
+external/tiff-4.7.0/PS3/PS3_Debug/
+external/tiff-4.7.0/PS3/PS3_Release/
+external/zlib-1.3.1/PS3/PS3_Debug/
+external/zlib-1.3.1/PS3/PS3_Release/
+extra/SDL2_image-2.0.5/PS3/PS3_Debug/
+extra/SDL2_image-2.0.5/PS3/PS3_Release/
+extra/SDL2_mixer-2.0.4/PS3/PS3_Debug/
+extra/SDL2_mixer-2.0.4/PS3/PS3_Release/
+extra/SDL2_net-2.0.1/PS3/PS3_Debug/
+extra/SDL2_net-2.0.1/PS3/PS3_Release/
+extra/SDL2_ttf-2.0.13/PS3/PS3_Debug/
+extra/SDL2_ttf-2.0.13/PS3/PS3_Release/
 
 # for Android
 android-project/local.properties

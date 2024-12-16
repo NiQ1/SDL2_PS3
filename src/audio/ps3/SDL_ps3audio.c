@@ -200,6 +200,7 @@ PS3_AUD_Init(SDL_AudioDriverImpl * impl)
 	/* Set the function pointers */
 	impl->OpenDevice = PS3_AUD_OpenDevice;
 	//impl->PlayDevice = PS3_AUD_PlayDevice;
+	impl->PlayDevice = NULL;
     impl->WaitDevice = PS3_WaitDevice;
 	impl->CloseDevice = PS3_AUD_CloseDevice;
 	impl->GetDeviceBuf = PS3_AUD_GetDeviceBuf;

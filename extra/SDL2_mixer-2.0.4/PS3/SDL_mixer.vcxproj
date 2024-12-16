@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|PS3">
+      <Configuration>Debug</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PS3">
+      <Configuration>Release</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC70F1DD-66C8-4274-8ACE-749278BBEE58}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(DebuggerFlavor)'=='PS3Debugger'" Label="OverrideDebuggerDefaults">
+    <!--LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand-->
+    <!--LocalDebuggerCommandArguments></LocalDebuggerCommandArguments-->
+    <!--LocalDebuggerCommandLine>-r -e -m</LocalDebuggerCommandLine-->
+    <!--LocalRunCommandLine>-r</LocalRunCommandLine-->
+    <!--LocalTunerCommandLine></LocalTunerCommandLine-->
+    <!--LocalDebuggerFileServingDirectory>$(ProjectDir)</LocalDebuggerFileServingDirectory-->
+    <!--LocalDebuggerHomeDirectory>$(ProjectDir)</LocalDebuggerHomeDirectory-->
+    <!--LocalDebuggerProjectFile></LocalDebuggerProjectFile-->
+    <!--LocalDebuggerResetType>Soft</LocalDebuggerResetType-->
+    <!--LocalDebuggerClearTty>False</LocalDebuggerClearTty-->
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;__CELL_ASSERT__;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalIncludeDirectories>../../../include;../../../external/libvorbis-1.3.7/include;../../../external/libogg-1.3.5/include;../../../external/mpg123-1.32.10/src/include;../../../external/opusfile-0.12/include;../../../external/opus-1.5.2/include;../../../external/libtimidity-0.2.7/src;../../../external/libmodplug-0.8.9.0/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <AdditionalIncludeDirectories>../../../include;../../../external/libvorbis-1.3.7/include;../../../external/libogg-1.3.5/include;../../../external/mpg123-1.32.10/src/include;../../../external/opusfile-0.12/include;../../../external/opus-1.5.2/include;../../../external/libtimidity-0.2.7/src;../../../external/libmodplug-0.8.9.0/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\effects_internal.h" />
+    <ClInclude Include="..\load_aiff.h" />
+    <ClInclude Include="..\load_voc.h" />
+    <ClInclude Include="..\mixer.h" />
+    <ClInclude Include="..\music.h" />
+    <ClInclude Include="..\music_cmd.h" />
+    <ClInclude Include="..\music_flac.h" />
+    <ClInclude Include="..\music_fluidsynth.h" />
+    <ClInclude Include="..\music_mad.h" />
+    <ClInclude Include="..\music_mikmod.h" />
+    <ClInclude Include="..\music_modplug.h" />
+    <ClInclude Include="..\music_mpg123.h" />
+    <ClInclude Include="..\music_nativemidi.h" />
+    <ClInclude Include="..\music_ogg.h" />
+    <ClInclude Include="..\music_opus.h" />
+    <ClInclude Include="..\music_timidity.h" />
+    <ClInclude Include="..\music_wav.h" />
+    <ClInclude Include="..\SDL_mixer.h" />
+    <ClInclude Include="..\SDL_mixer_conf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\effects_internal.c" />
+    <ClCompile Include="..\effect_position.c" />
+    <ClCompile Include="..\effect_stereoreverse.c" />
+    <ClCompile Include="..\load_aiff.c" />
+    <ClCompile Include="..\load_voc.c" />
+    <ClCompile Include="..\mixer.c" />
+    <ClCompile Include="..\music.c" />
+    <ClCompile Include="..\music_cmd.c" />
+    <ClCompile Include="..\music_flac.c" />
+    <ClCompile Include="..\music_fluidsynth.c" />
+    <ClCompile Include="..\music_mad.c" />
+    <ClCompile Include="..\music_mikmod.c" />
+    <ClCompile Include="..\music_modplug.c" />
+    <ClCompile Include="..\music_mpg123.c" />
+    <ClCompile Include="..\music_nativemidi.c" />
+    <ClCompile Include="..\music_ogg.c" />
+    <ClCompile Include="..\music_opus.c" />
+    <ClCompile Include="..\music_timidity.c" />
+    <ClCompile Include="..\music_wav.c" />
+    <ClCompile Include="..\playmus.c" />
+    <ClCompile Include="..\playwave.c" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
