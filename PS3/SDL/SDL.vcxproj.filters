@@ -392,6 +392,36 @@
     <ClCompile Include="..\..\src\audio\ps3\SDL_ps3audio.c">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\thread\ps3\SDL_sysmutex.c">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_blendfillrect.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_blendline.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_blendpoint.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_drawline.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_drawpoint.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_render_sw.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\software\SDL_rotate.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread\pthread\SDL_systls.c">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\yuv2rgb\yuv_rgb.c">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\audio\SDL_audio_c.h">
@@ -765,6 +795,39 @@
     </ClInclude>
     <ClInclude Include="..\..\src\video\ps3\SDL_PS3_mm.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\thread\ps3\SDL_sysmutex_c.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_blendfillrect.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_blendline.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_blendpoint.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_draw.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_drawline.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_drawpoint.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_render_sw_c.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\software\SDL_rotate.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\yuv2rgb\yuv_rgb_std_func.h">
+      <Filter>Header Files\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\yuv2rgb\yuv_rgb.h">
+      <Filter>Header Files\video</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

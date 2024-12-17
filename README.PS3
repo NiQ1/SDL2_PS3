@@ -5,6 +5,7 @@ Based on SDL2_PSL1GHT by sergiou87, https://github.com/sergiou87/SDL2_PSL1GHT
 Itself based on SDL_PSL1GHT by zeldin, https://github.com/zeldin/SDL_PSL1GHT
 Ported to the official Cell SDK by Twilight because there doesn't seem to
 be a proper debugger for PSL1GHT.
+See LICENSE.TXT for all licenses covering this work.
 
 
 Build instructions:
@@ -13,3 +14,22 @@ Build instructions:
 - Install SCE Cell SDK. Be sure to install the VS2010 plugin.
 - Open PS3/SDL.sln
 - Build and enjoy
+
+
+Notes:
+
+- This is work in progress! Currently it compiles, but untested
+- For SDL2_image, webp is not upported, *might* be supported in the future
+  All other image formats are supported.
+- For SDL2_mixer:
+  * FluidSynth is not supported (too complicated and probably too heavy for the PS3)
+    Timidity is supported for MIDI playback.
+  * MAD is not supported due to it being GPL-licensed, which would put this entire
+    work under the GPL.
+	mpg123 can be used for MP3 playback.
+  * Mikmod is not supported. Modplug can be used instead to play MOD files.
+  * Native MIDI is not supported (no support in the PS3 hardware).
+  AIFF, VOC, FLAC, MOD, MP3, MIDI, OGG Vorbis, OGG Opus, MIDI, WAV are all supported
+  by at least one engine.
+- That said, the SDL audio subsystem for the PS3 seems to be broken.
+  It might work for you, might not.

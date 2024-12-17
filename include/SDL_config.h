@@ -168,7 +168,7 @@
 #define HAVE_LOGF 1
 #define HAVE_LOG10 1
 #define HAVE_LOG10F 1
-/* #undef HAVE_POW */
+#define HAVE_POW 1
 #define HAVE_POWF 1
 #define HAVE_SCALBN 1
 #define HAVE_SCALBNF 1
@@ -294,7 +294,7 @@
 /* #undef SDL_JOYSTICK_HIDAPI */
 /* #undef SDL_JOYSTICK_RAWINPUT */
 /* #undef SDL_JOYSTICK_EMSCRIPTEN */
-#define SDL_JOYSTICK_VIRTUAL 1
+/* #undef SDL_JOYSTICK_VIRTUAL 1 */
 #define SDL_JOYSTICK_PS3 1
 #define SDL_HAPTIC_DUMMY 1
 /* #undef SDL_HAPTIC_ANDROID */

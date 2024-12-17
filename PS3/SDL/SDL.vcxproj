@@ -98,6 +98,13 @@
     <ClCompile Include="..\..\src\render\SDL_d3dmath.c" />
     <ClCompile Include="..\..\src\render\SDL_render.c" />
     <ClCompile Include="..\..\src\render\SDL_yuv_sw.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_blendfillrect.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_blendline.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_blendpoint.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_drawline.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_drawpoint.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_render_sw.c" />
+    <ClCompile Include="..\..\src\render\software\SDL_rotate.c" />
     <ClCompile Include="..\..\src\SDL.c" />
     <ClCompile Include="..\..\src\SDL_assert.c" />
     <ClCompile Include="..\..\src\SDL_dataqueue.c" />
@@ -113,9 +120,11 @@
     <ClCompile Include="..\..\src\stdlib\SDL_stdlib.c" />
     <ClCompile Include="..\..\src\stdlib\SDL_string.c" />
     <ClCompile Include="..\..\src\stdlib\SDL_strtokr.c" />
+    <ClCompile Include="..\..\src\thread\ps3\SDL_sysmutex.c" />
     <ClCompile Include="..\..\src\thread\ps3\SDL_syssem.c" />
     <ClCompile Include="..\..\src\thread\ps3\SDL_systhread.c" />
     <ClCompile Include="..\..\src\thread\ps3\sigsetops.c" />
+    <ClCompile Include="..\..\src\thread\pthread\SDL_systls.c" />
     <ClCompile Include="..\..\src\thread\SDL_thread.c" />
     <ClCompile Include="..\..\src\timer\ps3\SDL_systimer.c" />
     <ClCompile Include="..\..\src\timer\SDL_timer.c" />
@@ -146,6 +155,7 @@
     <ClCompile Include="..\..\src\video\SDL_video.c" />
     <ClCompile Include="..\..\src\video\SDL_vulkan_utils.c" />
     <ClCompile Include="..\..\src\video\SDL_yuv.c" />
+    <ClCompile Include="..\..\src\video\yuv2rgb\yuv_rgb.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\begin_code.h" />
@@ -242,6 +252,14 @@
     <ClInclude Include="..\..\src\render\SDL_d3dmath.h" />
     <ClInclude Include="..\..\src\render\SDL_sysrender.h" />
     <ClInclude Include="..\..\src\render\SDL_yuv_sw_c.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_blendfillrect.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_blendline.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_blendpoint.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_draw.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_drawline.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_drawpoint.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_render_sw_c.h" />
+    <ClInclude Include="..\..\src\render\software\SDL_rotate.h" />
     <ClInclude Include="..\..\src\SDL_assert_c.h" />
     <ClInclude Include="..\..\src\SDL_dataqueue.h" />
     <ClInclude Include="..\..\src\SDL_error_c.h" />
@@ -250,6 +268,7 @@
     <ClInclude Include="..\..\src\sensor\dummy\SDL_dummysensor.h" />
     <ClInclude Include="..\..\src\sensor\SDL_sensor_c.h" />
     <ClInclude Include="..\..\src\sensor\SDL_syssensor.h" />
+    <ClInclude Include="..\..\src\thread\ps3\SDL_sysmutex_c.h" />
     <ClInclude Include="..\..\src\thread\ps3\SDL_systhread_c.h" />
     <ClInclude Include="..\..\src\thread\SDL_systhread.h" />
     <ClInclude Include="..\..\src\thread\SDL_thread_c.h" />
@@ -272,6 +291,8 @@
     <ClInclude Include="..\..\src\video\SDL_sysvideo.h" />
     <ClInclude Include="..\..\src\video\SDL_vulkan_internal.h" />
     <ClInclude Include="..\..\src\video\SDL_yuv_c.h" />
+    <ClInclude Include="..\..\src\video\yuv2rgb\yuv_rgb.h" />
+    <ClInclude Include="..\..\src\video\yuv2rgb\yuv_rgb_std_func.h" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
