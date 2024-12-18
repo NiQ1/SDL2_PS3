@@ -35,7 +35,11 @@
  * 2: SPE debug messages
  * 3: Memory adresses
  */
+#if defined(DEBUG) || defined(_DEBUG)
+#define VIDEO_DEBUG_LEVEL 1
+#else
 #define VIDEO_DEBUG_LEVEL 0
+#endif
 
 #ifdef VIDEO_DEBUG_LEVEL
 #define deprintf( level, fmt, args... ) \

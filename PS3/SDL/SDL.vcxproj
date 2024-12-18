@@ -133,6 +133,7 @@
     <ClCompile Include="..\..\src\video\ps3\SDL_PS3modes.c" />
     <ClCompile Include="..\..\src\video\ps3\SDL_PS3mouse.c" />
     <ClCompile Include="..\..\src\video\ps3\SDL_PS3video.c" />
+    <ClCompile Include="..\..\src\video\ps3\SDL_PS3_heap.c" />
     <ClCompile Include="..\..\src\video\ps3\SDL_PS3_mm.c" />
     <ClCompile Include="..\..\src\video\SDL_blit.c" />
     <ClCompile Include="..\..\src\video\SDL_blit_0.c" />
@@ -278,6 +279,7 @@
     <ClInclude Include="..\..\src\video\ps3\SDL_PS3modes_c.h" />
     <ClInclude Include="..\..\src\video\ps3\SDL_PS3mouse_c.h" />
     <ClInclude Include="..\..\src\video\ps3\SDL_PS3video.h" />
+    <ClInclude Include="..\..\src\video\ps3\SDL_PS3_heap.h" />
     <ClInclude Include="..\..\src\video\ps3\SDL_PS3_mm.h" />
     <ClInclude Include="..\..\src\video\SDL_blit.h" />
     <ClInclude Include="..\..\src\video\SDL_blit_auto.h" />

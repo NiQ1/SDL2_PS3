@@ -7,14 +7,15 @@
 #include <cell/gcm.h>
 #include <sys/memory.h>
 #include <sys/timer.h>
-#include <mspace.h>
+
+#include "../../video/ps3/SDL_PS3_heap.h"
 
 #define SAFE_AREA			4096
 
 static CellGcmConfig __rsx_config;
 
-static sys_addr_t __heap_area;
-static mspace __rsx_heap;
+//static sys_addr_t __heap_area;
+static heap_cntrl __rsx_heap;
 static uint32_t __rsxheap_initialized = 0;
 
 int64_t rsxHeapInit()
@@ -27,9 +28,8 @@ int64_t rsxHeapInit()
 		
 		heapBuffer = __rsx_config.localAddress;
 		heapBufferSize = __rsx_config.localSize - SAFE_AREA;
-		
-		sys_memory_allocate(heapBufferSize, SYS_MEMORY_PAGE_SIZE_1M, (sys_addr_t *)(&__heap_area));
-		__rsx_heap = mspace_create((void*)__heap_area, heapBufferSize);
+
+		heapInit(&__rsx_heap,heapBuffer,heapBufferSize);
 		
 		__rsxheap_initialized = 1;
 	}
@@ -40,19 +40,19 @@ int64_t rsxHeapInit()
 void* rsxMemalign(uint32_t alignment,uint32_t size)
 {
 	if(!__rsxheap_initialized) return NULL;
-	return mspace_memalign(&__rsx_heap,alignment,size);
+	return heapAllocateAligned(&__rsx_heap,size,alignment);
 }
 
 void* rsxMalloc(uint32_t size)
 {
 	if(!__rsxheap_initialized) return NULL;
-	return mspace_malloc(&__rsx_heap,size);
+	return heapAllocate(&__rsx_heap,size);
 }
 
 void rsxFree(void *ptr)
 {
 	if(!__rsxheap_initialized) return;
-	mspace_free(&__rsx_heap,ptr);
+	heapFree(&__rsx_heap,ptr);
 }
 
 void rsxResetCommandBuffer(CellGcmContextData *context)

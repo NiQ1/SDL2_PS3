@@ -105,6 +105,9 @@ PS3_VideoQuit(_THIS)
 
 }
 
+// Exported by the binary lib file but the SDK chooses to hide it... we use it anyway.
+int32_t _cellGcmInitBody(CellGcmContextData **ctx,const u32 cmdSize,const u32 ioSize,const void *ioAddress);
+
 void initializeGPU( SDL_DeviceData * devdata)
 {
     deprintf (1, "initializeGPU()\n");
@@ -113,7 +116,10 @@ void initializeGPU( SDL_DeviceData * devdata)
     assert(host_addr != NULL);
 
     // Initilise Reality, which sets up the command buffer and shared IO memory
-    devdata->_CommandBuffer = (CellGcmContextData*)cellGcmInit(0x10000, 1024*1024, host_addr);
+    //devdata->_CommandBuffer = (CellGcmContextData*)cellGcmInit(0x10000, 1024*1024, host_addr);
+	if (_cellGcmInitBody(&(devdata->_CommandBuffer), 0x10000, 1024*1024, host_addr) != CELL_OK) {
+		devdata->_CommandBuffer = NULL;
+	}
     assert(devdata->_CommandBuffer != NULL);
 }
 

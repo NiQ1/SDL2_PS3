@@ -160,6 +160,8 @@ PS3_CreateRenderer(SDL_Window * window, Uint32 flags)
     
     SDL_zerop(data);
     
+	rsxHeapInit();
+
     deprintf (1, "\tMem allocated\n");
     
     // Get a copy of the command buffer
