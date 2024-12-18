@@ -94,7 +94,8 @@ SDL_SYS_JoystickDetect(void)
 	CellPadInfo2 padinfo;
 
 	int iReturn = cellPadGetInfo2(&padinfo);
-	pdprintf("\tGot info\n");
+	// This spams too much during the event loop
+	//pdprintf("\tGot info\n");
 	if( iReturn != 0)
 	{
 		SDL_SetError("SDL_SYS_JoystickInit() : Couldn't get PS3 pads information ");
@@ -121,7 +122,7 @@ SDL_SYS_JoystickGetDeviceName(int device_index)
 {
 	char * name = NULL;
 	if (device_index < numberOfJoysticks)
-		name = "PS1LIGHT Controller";
+		name = "PS3 Controller";
 	else
 		SDL_SetError("No joystick available with that index");
     return name;
